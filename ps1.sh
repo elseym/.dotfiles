@@ -16,11 +16,11 @@ function _chomp_path() {
 
 function _vagrant_status() {
 	local vmuuid=`egrep -o '[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{8}' .vagrant 2>/dev/null`
-	local vmpid=`pgrep -f $vmuuid 2>/dev/null`
 	local color=$light_red
 	local VERB="vm"
 
 	if [ -n "$vmuuid" ]; then
+        local vmpid=`pgrep -f $vmuuid 2>/dev/null`
 		if [ -n "$vmpid" ]; then
 			color=$light_green
 		fi
