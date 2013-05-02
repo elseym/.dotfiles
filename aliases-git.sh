@@ -25,3 +25,26 @@ function gaacm {
 function gcm {
 	git commit -m "$*"
 }
+
+function gar {
+    [ "$1" ] || return
+    RX="$1"
+    shift
+
+	while [ "$1" ]; do
+		RX="$RX $1"
+        shift
+	done
+
+	TA=''
+	for F in `git status --porcelain |awk '{print $2}'`; do
+		for R in $RX; do
+            [ "`echo $F | egrep -i $R`" ] || continue 2;
+        done
+        TA="$TA $F"
+	done
+
+    [ "$TA" ] || return
+
+    ga $TA;
+}
