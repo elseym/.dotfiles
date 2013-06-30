@@ -12,7 +12,10 @@ alias gpP='gp && gP'
 alias gprP='gpr && gP'
 
 alias gc='git checkout'
-alias gr='git reset HEAD'
+alias gcb='gc -b'
+
+alias gr='git reset'
+alias grh='gr HEAD'
 
 alias gst='git stash'
 alias gsp='gst pop'
