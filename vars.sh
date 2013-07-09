@@ -1,7 +1,9 @@
 export PHPVER='php54'
 
 export TERM='xterm-256color'
-export PATH="$(brew --prefix $PHPVER)/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:`echo $PATH | sed 's/\/usr\/local\/bin\:*//g'`:/usr/local/share/npm/bin"
+
+type brew 1>/dev/null 2>&1 && bpfx="$(brew --prefix $PHPVER)/bin:" || bpfx=""
+export PATH="$bpfx/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:`echo $PATH | sed 's/\/usr\/local\/bin\:*//g'`:/usr/local/share/npm/bin"
 export NODE_PATH="/usr/local/lib/node_modules:/usr/local/lib/node_modules/npm"
 
 export GIT_EDITOR=nano
