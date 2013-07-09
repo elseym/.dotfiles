@@ -25,4 +25,4 @@ alias sudo='sudo -i'
 
 alias tree='tree -Ffip --dirsfirst'
 
-alias prj='mate /etc/hosts /etc/apache2/extra/httpd-vhosts.conf'
+# alias prj='mate /etc/hosts /etc/apache2/extra/httpd-vhosts.conf'
