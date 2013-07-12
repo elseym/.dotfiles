@@ -15,7 +15,10 @@ function _chomp_path() {
 }
 
 function _vagrant_status() {
-	local vmuuid=`egrep -o '[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{8}' .vagrant 2>/dev/null`
+  local metafile="`ls -ldac .vagrant* 2>/dev/null |grep -v ^d |head -n1 |awk '{print $9}'`"
+  [ -z "$metafile" ] && return
+
+	local vmuuid="`egrep -o '[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{8}' $metafile 2>/dev/null`"
 	local color=$light_red
 	local VERB="vm"
 
