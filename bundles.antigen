@@ -1,0 +1,38 @@
+##
+# oh my zsh
+##
+cp
+rsync
+debian
+extract
+colored-man
+command-not-found
+history-substring-search
+
+docker
+vagrant
+
+lol
+
+chriskempson/base16-shell base16-solarized.dark.sh
+
+git
+github
+git-extras
+
+tmux
+
+
+##
+# elseym/.dotfiles
+##
+elseym/.dotfiles aliases/git
+elseym/.dotfiles aliases/misc
+elseym/.dotfiles aliases/vagrant
+
+
+##
+# zsh-users
+##
+zsh-users/zsh-completions
+zsh-users/zsh-syntax-highlighting
