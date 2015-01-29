@@ -1,10 +1,12 @@
-[ -L ${HOME}/.zshrc ] || (
+BASEDIR=${0%/*.*}
+
+if [ ! -L ${HOME}/.zshrc ]; then
   [ -f ${HOME}/.zshrc ] && mv ${HOME}/.zshrc ${HOME}/.zshrc.original
-  ln -sf ./.zshrc ${HOME}
-)
+  ln -sf ${BASEDIR}/.zshrc ${HOME}
+fi
 
-# load bundles
-antigen bundles < ./bundles.antigen
+# set bundles
+export ELSEYM_ANTIGEN_BUNDLES=$(cat ${BASEDIR}/bundles.antigen)
 
-# load theme
-antigen theme $(cat ./theme.antigen)
+# set theme
+export ELSEYM_DOTFILES_THEME=$(cat ${BASEDIR}/theme.antigen)
