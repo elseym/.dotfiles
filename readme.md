@@ -1,6 +1,9 @@
-### .dotfiles
+# .dotfiles
 
-#### installation
+## installation
 
-* install with  
-  `git clone https://github.com/elseym/.dotfiles ~/.dotfiles`
+* either evaluate the `.zshrc`  
+  `curl -Lo- https://raw.githubusercontent.com/elseym/.dotfiles/master/.zshrc | zsh`
+
+* or replace your existing `.zshrc` and login  
+  `curl -Lo- https://raw.githubusercontent.com/elseym/.dotfiles/master/.zshrc > ~/.zshrc`
