@@ -14,8 +14,6 @@ vagrant
 
 lol
 
-chriskempson/base16-shell base16-solarized.dark.sh
-
 git
 github
 git-extras
