@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # misc
 ## composer
 alias cou='composer update'

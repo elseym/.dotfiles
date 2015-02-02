@@ -1,4 +1,9 @@
+#!/usr/bin/env zsh
+
 # git
+## remove existing git aliases
+elunalias git
+
 ## add
 alias ga='git add'
 alias gap='ga --patch'
