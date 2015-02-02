@@ -7,6 +7,7 @@ if [ ! -L ${HOME}/.zshrc ]; then
   ln -sf ${BASEDIR}/.zshrc ${HOME}
 fi
 
+source ${BASEDIR}/functions.zsh
 antigen bundles <<<$(cat ${BASEDIR}/bundles.antigen)
 
 antigen theme "$(cat ${BASEDIR}/theme.antigen)"

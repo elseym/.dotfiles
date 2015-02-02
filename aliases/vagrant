@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 
 # vagrant
+## remove existing git aliases
+elunalias vagrant
+
 ## base
 alias vagrant='VAGRANT_CWD=$(ls -d vagrant 2>/dev/null || echo ''.'') vagrant'
 
