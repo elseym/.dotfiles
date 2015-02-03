@@ -24,7 +24,7 @@ alias gsl='gs --long'
 
 ## reset
 alias ge='git reset'
-alias geh='gR --hard'
+alias geh='ge --hard'
 alias geh@='geh @'
 
 ## push
@@ -39,7 +39,8 @@ alias glml='glm -1 |head -n1'
 ## commit
 alias gc='git commit'
 alias gcm='gc -m'
-alias gcam='gc -a -m'
+alias gaacm='gc --all --message'
+alias gaacam='gc --all --amend'
 
 ## checkout
 alias go='git checkout'

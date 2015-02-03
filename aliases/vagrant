@@ -13,6 +13,7 @@ alias vunp='vu --no-provision'
 
 ## provision
 alias vp='vagrant provision'
+alias vpp='vp --provision-with=puppet'
 
 ## status
 alias vt='vagrant status'
@@ -20,9 +21,11 @@ alias vtg='vagrant global-status'
 
 ## reload
 alias vr='vagrant reload'
+alias vrp='vr --provision'
 
 ## ssh
 alias vs='vagrant ssh'
+alias vsc='vs -c'
 
 ## destroy
 alias vd='vagrant destroy'
