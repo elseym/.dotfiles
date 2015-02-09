@@ -18,6 +18,13 @@ alias gpr='gp --rebase=true'
 alias gd='git diff'
 alias gdc='gd --cached'
 
+## fetch
+alias gf='git fetch'
+alias gfa='gf --all'
+alias gfp='gf --prune'
+alias gft='gf --tags'
+alias gfapt='gfa; gfp; gft'
+
 ## status
 alias gs='git status --short --branch'
 alias gsl='gs --long'

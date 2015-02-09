@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+# boot2docker
+## main
+alias bd='boot2docker'
+
+## misc
+alias bdsi='bd shellinit'
+alias bdup='bd up'
+alias bdre='bd restart'
+alias bdsh='bd ssh'
