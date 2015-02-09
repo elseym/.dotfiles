@@ -8,6 +8,9 @@ if [ ! -L ${HOME}/.zshrc ]; then
 fi
 
 source ${BASEDIR}/functions.zsh
+
 antigen bundles <<<$(cat ${BASEDIR}/bundles.antigen)
 
 antigen theme "$(cat ${BASEDIR}/theme.antigen)"
+
+source ${BASEDIR}/initialisation.zsh
