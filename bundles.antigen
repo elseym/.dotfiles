@@ -32,5 +32,5 @@ elseym/.dotfiles aliases/vagrant
 ##
 # zsh-users
 ##
-zsh-users/zsh-completions
+zsh-users/zsh-completions src
 zsh-users/zsh-syntax-highlighting
