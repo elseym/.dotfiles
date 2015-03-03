@@ -1,1 +1,1 @@
-alias fxl='fig -p ${HOME}/flxel/flxel'
+alias fxl='fig -p flxel -f ${HOME}/flxel/flxel/fig.yml'
