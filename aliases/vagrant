@@ -9,11 +9,11 @@ alias vagrant='VAGRANT_CWD=$(ls -d vagrant 2>/dev/null || echo ''.'') vagrant'
 
 ## up
 alias vu='vagrant up'
-alias vunp='vu --no-provision'
+alias vunp='vagrant up --no-provision'
 
 ## provision
 alias vp='vagrant provision'
-alias vpp='vp --provision-with=puppet'
+alias vpp='vagrant provision --provision-with=puppet'
 
 ## status
 alias vt='vagrant status'
@@ -21,15 +21,15 @@ alias vtg='vagrant global-status'
 
 ## reload
 alias vr='vagrant reload'
-alias vrp='vr --provision'
+alias vrp='vagrant reload --provision'
 
 ## ssh
 alias vs='vagrant ssh'
-alias vsc='vs -c'
+alias vsc='vagrant ssh -c'
 
 ## destroy
 alias vd='vagrant destroy'
-alias vdf='vd -f'
+alias vdf='vagrant destroy -f'
 
 ## halt
 alias vh='vagrant halt'

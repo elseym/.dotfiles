@@ -4,35 +4,33 @@
 ## remove existing git aliases
 elunalias docker dk
 
-alias dk='docker'
-
 ## ps
-alias dkp='dk ps'
-alias dkpa='dkp -a'
-alias dkpaq='dkpa -q'
+alias dkp='docker ps'
+alias dkpa='docker ps -a'
+alias dkpaq='docker ps -a -q'
 
 ## rm
-alias dkrm='dk rm'
-alias dkrmf='dkrm -f'
+alias dkrm='docker rm'
+alias dkrmf='docker rm -f'
 
 ## images
-alias dki='dk images'
-alias dkiq='dki -q'
+alias dki='docker images'
+alias dkiq='docker images -q'
 
 ## rmi
-alias dkrmi='dk rmi'
-alias dkrmif='dkrmi -f'
+alias dkrmi='docker rmi'
+alias dkrmif='docker rmi -f'
 
 ## build
-alias dkb='dk build'
-alias dkbt='dkb -t'
+alias dkb='docker build'
+alias dkbt='docker build -t'
 
 ## run
-alias dkr='dk run -it'
-alias dkrr='dkr --rm'
+alias dkr='docker run -it'
+alias dkrr='docker run -it --rm'
 
 ## exec
-alias dke='dk exec -it'
+alias dke='docker exec -it'
 
 ## idioms
 alias dkclean='dkrmf $(dkpaq)'

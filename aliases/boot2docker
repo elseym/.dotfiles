@@ -5,8 +5,8 @@
 alias bd='boot2docker'
 
 ## misc
-alias bdsi='eval $(bd shellinit 2>/dev/null)'
-alias bdup='bd up'
-alias bdre='bd restart'
-alias bdsh='bd ssh'
-alias bdip='bd ip'
+alias bdsi='eval $(boot2docker shellinit 2>/dev/null)'
+alias bdup='boot2docker up'
+alias bdre='boot2docker restart'
+alias bdsh='boot2docker ssh'
+alias bdip='boot2docker ip'

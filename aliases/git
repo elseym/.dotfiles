@@ -6,62 +6,77 @@ elunalias git
 
 ## add
 alias ga='git add'
-alias gap='ga --patch'
-alias gai='ga --interactive'
-alias gaa='ga --all'
+alias gap='git add --patch'
+alias gai='git add --interactive'
+alias gaa='git add --all'
 
 ## pull
 alias gp='git pull'
-alias gpr='gp --rebase=true'
+alias gpr='git pull --rebase=true'
 
 ## diff
 alias gd='git diff'
-alias gdc='gd --cached'
+alias gdc='git diff --cached'
 
 ## fetch
 alias gf='git fetch'
-alias gfa='gf --all'
-alias gfp='gf --prune'
-alias gft='gf --tags'
-alias gfapt='gfa; gfp; gft'
+alias gfa='git fetch --all'
+alias gfp='git fetch --prune'
+alias gft='git fetch --tags'
+alias gfapt='git fetch --all; git fetch --prune; git fetch --tags'
 
 ## status
 alias gs='git status --short --branch'
-alias gsl='gs --long'
+alias gsl='git status --long --branch'
 
 ## reset
 alias ge='git reset'
-alias geh='ge --hard'
-alias geh@='geh @'
+alias geh='git reset --hard'
+alias geh0='git reset --hard HEAD'
+alias geh1='git reset --hard HEAD~1'
+alias geh2='git reset --hard HEAD~2'
+alias geh3='git reset --hard HEAD~3'
+
+## rebase
+alias gr='git rebase'
+alias gri='git rebase --interactive'
+alias gra='git rebase --abort'
+alias grc='git rebase --continue'
+alias grs='git rebase --skip'
 
 ## push
 alias gu='git push'
-alias guu='gu -u'
+alias guu='git push -u'
 
 ## log
 alias gl='git log'
-alias glm='gl --pretty=%B'
-alias glml='glm -1 |head -n1'
+alias glm='git log --pretty=%B'
+alias glml='git log --pretty=%B -1 |head -n1'
 
 ## commit
 alias gc='git commit'
-alias gcm='gc -m'
-alias gaacm='gc --all --message'
-alias gaacam='gc --all --amend'
+alias gcm='git commit --message'
+alias gaacm='git commit --all --message'
+alias gaacam='git commit --all --amend'
 
 ## checkout
 alias go='git checkout'
-alias gob='go -b'
+alias gob='git checkout -b'
 
 ## branch
 alias gb='git branch'
-alias gba='gb -a'
+alias gbl='git branch --list --all --verbose --verbose'
 
 ## remote
-alias gr='git remote'
-alias grv='gr -v'
-alias gra='gr add'
+alias gm='git remote'
+alias gml='git remote --verbose'
+alias gma='git remote add'
+alias gmr='git remote remove'
+alias gmn='git remote rename'
+alias gmu='git remote set-url'
 
 ## stash
 alias gt='git stash'
-alias gtp='gt pop'
+alias gtp='git stash pop'
+alias gtl='git stash list'
+alias gta='git stash apply'
