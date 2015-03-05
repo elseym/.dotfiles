@@ -28,6 +28,7 @@ elseym/.dotfiles aliases/git
 elseym/.dotfiles aliases/misc
 elseym/.dotfiles aliases/vagrant
 elseym/.dotfiles aliases/docker
+elseym/.dotfiles aliases/docker-compose
 elseym/.dotfiles aliases/boot2docker
 
 

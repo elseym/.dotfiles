@@ -1,0 +1,32 @@
+#!/usr/bin/env zsh
+
+# docker
+## remove existing git aliases
+elunalias docker-compose dc
+
+## build
+alias dcb='docker-compose build'
+alias dcbn='docker-compose build --no-cache'
+
+## kill
+alias dck='docker-compose kill'
+
+## logs
+alias dcl='docker-compose logs'
+
+## ps
+alias dcp='docker-compose ps'
+
+## rm
+alias dcrm='docker-compose rm'
+alias dcrmf='docker-compose rm --force'
+
+## run
+alias dcr='docker-compose run'
+alias dcrb='docker-compose run --entrypoint=""'
+alias dcrr='docker-compose --rm'
+alias dcrrb='docker-compose run --rm --entrypoint=""'
+
+## up
+alias dcu='docker-compose up -d'
+alias dcuf='docker-compose up'
