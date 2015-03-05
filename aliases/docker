@@ -1,0 +1,35 @@
+#!/usr/bin/env zsh
+
+# docker
+alias dk='docker'
+
+## ps
+alias dkp='dk ps'
+alias dkpa='dkp -a'
+alias dkpaq='dkpa -q'
+
+## rm
+alias dkrm='dk rm'
+alias dkrmf='dkrm -f'
+
+## images
+alias dki='dk images'
+alias dkiq='dki -q'
+
+## rmi
+alias dkrmi='dk rmi'
+alias dkrmif='dkrmi -f'
+
+## build
+alias dkb='dk build'
+alias dkbt='dkb -t'
+
+## run
+alias dkr='dk run -it'
+alias dkrr='dkr --rm'
+
+## exec
+alias dke='dk exec -it'
+
+## idioms
+alias dkclean='dkrmf $(dkpaq)'
