@@ -24,7 +24,7 @@ alias dcrmf='docker-compose rm --force'
 ## run
 alias dcr='docker-compose run'
 alias dcrb='docker-compose run --entrypoint=""'
-alias dcrr='docker-compose --rm'
+alias dcrr='docker-compose run --rm'
 alias dcrrb='docker-compose run --rm --entrypoint=""'
 
 ## up
