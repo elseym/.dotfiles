@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 
 # docker
+## remove existing git aliases
+elunalias docker dk
+
 alias dk='docker'
 
 ## ps
