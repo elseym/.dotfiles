@@ -5,15 +5,14 @@
 # cd into each dir and execute all commands there.
 #  usage: mpx [dir,...] [--] command [,command,...]
 #
-function mpx { local wds= cwd="$(pwd)" cmd=
+function mpx { local ds= cwd="$(pwd)"
   while [ ${#} -gt 0 ]; do
-    [ -d "${1}" ] && wds="${wds} ${1}" && shift || break
+    [ -d "${1}" ] && ds="${ds} ${1}" && shift || break
     [ "--" = "${1}" ] && shift && break
   done
-  cmd="${@}"
-  for wd in "${wds##*( )}"; do
-    echo "[${0##*/}] executing '${cmd}' in '${wd}'..."
-    cd ${wd} && ${cmd}; cd ${cwd}
+  [ ${#} -gt 0 ] && for d in ${=ds}; do
+    echo -e "\n\033[4;1;30m[${0##*/}] in '${d}':\033[0m"
+    cd ${d} && for m in ${@}; do eval "${m}"; done; cd ${cwd}
   done
 }
 
