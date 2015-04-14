@@ -25,6 +25,10 @@ alias gfp='git fetch --prune'
 alias gft='git fetch --tags'
 alias gfapt='git fetch --all; git fetch --prune; git fetch --tags'
 
+## merge
+alias gg='git merge'
+alias ggnf='git merge --no-ff'
+
 ## status
 alias gs='git status --short --branch'
 alias gsl='git status --long --branch'
