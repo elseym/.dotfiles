@@ -3,6 +3,7 @@
 # docker
 ## remove existing git aliases
 elunalias docker-compose dc
+alias dc='docker-compose'
 
 ## build
 alias dcb='docker-compose build'

@@ -3,6 +3,7 @@
 # docker
 ## remove existing git aliases
 elunalias docker dk
+alias dk='docker'
 
 ## ps
 alias dkp='docker ps'
