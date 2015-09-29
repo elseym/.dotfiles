@@ -33,13 +33,6 @@ elseym/.dotfiles aliases/boot2docker
 
 
 ##
-# docker
-##
-docker/docker contrib/completion/zsh
-docker/compose contrib/completion/zsh
-
-
-##
 # zsh-users
 ##
 zsh-users/zsh-completions src
