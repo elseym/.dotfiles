@@ -37,3 +37,9 @@ elseym/.dotfiles aliases/boot2docker
 ##
 zsh-users/zsh-completions src
 zsh-users/zsh-syntax-highlighting
+
+##
+# misc
+##
+fcambus/ansiweather
+rimraf/k
