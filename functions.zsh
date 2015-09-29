@@ -27,3 +27,12 @@ function elunalias {
     alias |grep -E "^'?${2}.*${1}" |cut -d= -f1 |\
       while read a; do unalias "${a//'/}"; done
 }
+
+##
+# unlock - unlock remote luks
+#
+function unlock { local host="${1:?usage: unlock HOST}"
+  echo -ne "enter passphrase for ${1}: "
+  read -s unlockpassword
+  ssh ${1}-unlock "echo -ne ${unlockpassword} > /lib/cryptsetup/passfifo"
+}
