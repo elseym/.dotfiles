@@ -5,7 +5,8 @@ cp
 rsync
 debian
 extract
-colored-man
+man
+colored-man-pages
 command-not-found
 history-substring-search
 
