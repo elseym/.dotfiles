@@ -13,6 +13,10 @@ alias sr='screen -R'
 alias px='ps aux|grep'
 alias pgr='pgrep -il'
 
-## tree/ls
+## tree/ls/k
 alias tree='tree -Ffip --dirsfirst'
 alias l='ls -la'
+alias k='k -ah'
+
+## grep
+alias unco='egrep -v "^ *($|[;#])"'
