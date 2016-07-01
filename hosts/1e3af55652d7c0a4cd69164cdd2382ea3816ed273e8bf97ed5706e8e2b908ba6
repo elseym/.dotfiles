@@ -1,3 +1,2 @@
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --fontdir=/Library/Fonts"
 export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 export PS1_HOSTCOLOR=limegreen
