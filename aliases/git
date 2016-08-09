@@ -66,6 +66,7 @@ alias gaacam='git commit --all --amend'
 ## checkout
 alias goo='git checkout'
 alias gob='git checkout -b'
+alias got='git checkout --track'
 
 ## branch
 alias gb='git branch'
